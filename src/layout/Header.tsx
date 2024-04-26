@@ -14,7 +14,7 @@ export const Header = () => {
     <header className="w-full fixed bg-customBlack z-50">
       <div className="w-full h-[67px] container py-4 mx-auto flex justify-between items-center">
         <div className="flex items-center justify-between">
-          <Image src="/icon/Logo.svg" alt="logo" width={128} height={26} />
+          <Image src="/icon/Logo.png" alt="logo" width={128} height={26} />
         </div>
         <div className="relative inset-x-0 z-20 w-auto h-[67px] px-6 py-4 flex items-center justify-end">
           <div className="flex flex-row mx-6">

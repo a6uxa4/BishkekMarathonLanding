@@ -1,16 +1,20 @@
+"use client";
+
 import Image from "next/image";
+import { motion, useScroll, useSpring } from "framer-motion";
 
 export const Header = () => {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
   return (
-    <header className="w-full fixed bg-customBlack">
+    <header className="w-full fixed bg-customBlack z-50">
       <div className="w-full h-[67px] container py-4 mx-auto flex justify-between items-center">
         <div className="flex items-center justify-between">
-          <Image
-            src="/icon/logo.svg"
-            alt="logo"
-            width={128}
-            height={26}
-          />
+          <Image src="/icon/logo.svg" alt="logo" width={128} height={26} />
         </div>
         <div className="relative inset-x-0 z-20 w-auto h-[67px] px-6 py-4 flex items-center justify-end">
           <div className="flex flex-row mx-6">
@@ -38,6 +42,7 @@ export const Header = () => {
           </button>
         </div>
       </div>
+      <motion.div className="fixed left-0 right-0 h-1 bg-customGreen top-[67px]" style={{ scaleX }} />
     </header>
   );
 };

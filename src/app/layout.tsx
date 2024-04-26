@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Header } from "@/layout/Header";
+import { Footer } from "@/layout/Footer";
 
 export const metadata: Metadata = {
   title: "Bishkek Marathon",
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

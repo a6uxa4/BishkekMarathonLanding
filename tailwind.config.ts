@@ -17,7 +17,7 @@ const config: Config = {
         customWhite: "#FEFFFA",
       },
       backgroundImage: {
-        banner: "url('/images/Banner.png')",
+        banner: "url('/images/Banner.webp')",
       },
     },
   },

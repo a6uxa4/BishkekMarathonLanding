@@ -6,6 +6,7 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/layout/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/screens/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -14,6 +15,9 @@ const config: Config = {
         customGreen: "#E9FF00",
         customBlack: "#131313",
         customWhite: "#FEFFFA",
+      },
+      backgroundImage: {
+        banner: "url('/images/Banner.png')",
       },
     },
   },

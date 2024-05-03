@@ -4,7 +4,7 @@ const visible = { opacity: 1, y: 0, transition: { duration: 1 } };
 
 export const Intro = () => {
   return (
-    <motion.section className="w-[100vw] h-[100vh] flex justify-center items-center snap-center bg-banner bg-cover bg-center">
+    <section className="w-[100vw] h-[100vh] flex justify-center items-center snap-center bg-banner bg-cover bg-center">
       <motion.article
         className="flex flex-col items-center justify-center gap-5"
         initial="hidden"
@@ -61,6 +61,6 @@ export const Intro = () => {
           </span>
         </button>
       </motion.article>
-    </motion.section>
+    </section>
   );
 };

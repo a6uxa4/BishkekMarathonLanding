@@ -1,6 +1,7 @@
 "use client";
 
 import { About } from "@/screens/About";
+import { Distance } from "@/screens/Distance";
 import { Intro } from "@/screens/Intro";
 import clsx from "clsx";
 import { useMotionValueEvent, useScroll } from "framer-motion";
@@ -36,6 +37,7 @@ export default function Home() {
     >
       <Intro />
       <About />
+      <Distance />
       {[1, 2, 3, 4].map((image) => (
         <Image id={image} key={image} />
       ))}

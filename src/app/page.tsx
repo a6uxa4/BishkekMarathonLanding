@@ -1,5 +1,6 @@
 "use client";
 
+import { About } from "@/screens/About";
 import { Intro } from "@/screens/Intro";
 import clsx from "clsx";
 import { useMotionValueEvent, useScroll } from "framer-motion";
@@ -34,7 +35,8 @@ export default function Home() {
       )}
     >
       <Intro />
-      {[1, 2, 3, 4, 5].map((image) => (
+      <About />
+      {[1, 2, 3, 4].map((image) => (
         <Image id={image} key={image} />
       ))}
     </main>

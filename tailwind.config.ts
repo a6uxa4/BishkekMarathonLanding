@@ -19,6 +19,7 @@ const config: Config = {
       backgroundImage: {
         banner: "url('/images/Banner.webp')",
         about: "url('/images/About.webp')",
+        conditions: "url('/images/Conditions.webp')",
       },
     },
   },

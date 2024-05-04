@@ -1,6 +1,7 @@
 "use client";
 
 import { About } from "@/screens/About";
+import { Conditions } from "@/screens/Conditions";
 import { Distance } from "@/screens/Distance";
 import { Intro } from "@/screens/Intro";
 import clsx from "clsx";
@@ -38,7 +39,8 @@ export default function Home() {
       <Intro />
       <About />
       <Distance />
-      {[1, 2, 3, 4].map((image) => (
+      <Conditions />
+      {[1, 2, 3].map((image) => (
         <Image id={image} key={image} />
       ))}
     </main>

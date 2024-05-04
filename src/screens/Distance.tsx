@@ -26,7 +26,7 @@ export const Distance = () => {
         </motion.h1>
       </div>
       <div className="w-[50%] h-full">
-        <div className="w-full flex items-center justify-between bg-customWhite">
+        <div className="w-full flex items-center justify-center bg-customWhite">
           <motion.div
             variants={{
               initial: {
@@ -68,7 +68,6 @@ export const Distance = () => {
                 width: "100%",
                 transition: {
                   duration: 1,
-                  delay: 1,
                 },
               },
             }}

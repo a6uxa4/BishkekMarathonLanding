@@ -20,6 +20,7 @@ const config: Config = {
         banner: "url('/images/Banner.webp')",
         about: "url('/images/About.webp')",
         conditions: "url('/images/Conditions.webp')",
+        schedule: "url('/images/Schedule.webp')",
       },
     },
   },

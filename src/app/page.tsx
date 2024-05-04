@@ -4,6 +4,7 @@ import { About } from "@/screens/About";
 import { Conditions } from "@/screens/Conditions";
 import { Distance } from "@/screens/Distance";
 import { Intro } from "@/screens/Intro";
+import { Schedule } from "@/screens/Schedule";
 import clsx from "clsx";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { useState } from "react";
@@ -40,7 +41,8 @@ export default function Home() {
       <About />
       <Distance />
       <Conditions />
-      {[1, 2, 3].map((image) => (
+      <Schedule />
+      {[1, 2].map((image) => (
         <Image id={image} key={image} />
       ))}
     </main>

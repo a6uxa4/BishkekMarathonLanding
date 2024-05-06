@@ -26,7 +26,7 @@ export const Distance = () => {
         </motion.h1>
       </div>
       <div className="w-[50%] h-full">
-        <div className="w-full flex items-center justify-center bg-customWhite">
+        <div className="w-full h-[60%] flex items-center justify-center bg-customWhite">
           <motion.div
             variants={{
               initial: {
@@ -41,7 +41,7 @@ export const Distance = () => {
             }}
             initial="initial"
             whileInView="animate"
-            className="w-full h-[480px] bg-customGreen flex items-center justify-center text-[60px] font-bold tracking-widest text-customBlack"
+            className="w-full h-full bg-customGreen flex items-center justify-center text-[60px] font-bold tracking-widest text-customBlack"
           >
             <motion.h1
               variants={{
@@ -73,7 +73,7 @@ export const Distance = () => {
             }}
             initial="initial"
             whileInView="animate"
-            className="w-full h-[480px] bg-customRed flex items-center justify-center text-[60px] font-bold tracking-widest text-customWhite"
+            className="w-full h-full bg-customRed flex items-center justify-center text-[60px] font-bold tracking-widest text-customWhite"
           >
             <motion.h1
               variants={{
@@ -105,9 +105,11 @@ export const Distance = () => {
           }}
           initial="initial"
           whileInView="animate"
-          className="w-full h-[310px] bg-customBlack flex items-center justify-center text-customWhite font-bold text-[60px] tracking-widest"
+          className="w-full h-[40%] bg-customBlack flex items-center justify-center"
         >
-          2000 сом
+          <h1 className="text-customWhite font-bold text-[60px] tracking-widest">
+            2000 сом
+          </h1>
         </motion.div>
       </div>
     </section>

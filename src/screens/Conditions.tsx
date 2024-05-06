@@ -7,8 +7,8 @@ export const Conditions = () => {
     "Стартовый взнос 2000",
   ];
   return (
-    <section className="w-[100vw] h-[100vh] flex justify-center items-center snap-center">
-      <div className="w-[50%] h-full bg-customBlack text-customWhite flex items-center justify-center p-[59px]">
+    <section className="w-screen h-screen flex justify-center items-center snap-center">
+      <div className="w-1/2 h-full bg-customBlack text-customWhite flex items-center justify-center p-16">
         <ul className="w-full h-full flex flex-col items-start justify-around">
           {data.map((item, index) => (
             <motion.li
@@ -39,7 +39,7 @@ export const Conditions = () => {
           ))}
         </ul>
       </div>
-      <div className="w-[50%] h-full bg-conditions relative flex items-center justify-center">
+      <div className="w-1/2 h-full bg-conditions relative flex items-center justify-center bg-no-repeat object-fill bg-cover bg-center">
         <h1 className="absolute z-20 text-customWhite text-[46px] font-bold leading-5">
           Для участия необходимо
         </h1>

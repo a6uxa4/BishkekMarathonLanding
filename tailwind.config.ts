@@ -21,6 +21,7 @@ const config: Config = {
         about: "url('/images/About.webp')",
         conditions: "url('/images/Conditions.webp')",
         schedule: "url('/images/Schedule.webp')",
+        ending: "url('/images/Ending.webp')",
       },
     },
   },

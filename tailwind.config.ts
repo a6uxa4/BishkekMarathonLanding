@@ -34,6 +34,7 @@ const config: Config = {
         schedule: "url('/images/Schedule.webp')",
         ending: "url('/images/Ending.webp')",
         finish: "url('/images/Finish.webp')",
+        conditionsM: "url('/images/ConditionsMobile.webp')",
       },
     },
   },

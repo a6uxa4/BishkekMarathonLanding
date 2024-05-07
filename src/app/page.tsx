@@ -12,12 +12,12 @@ import { Schedule } from "@/screens/Schedule";
 
 export default function Home() {
   return (
-    <main className="flex w-svw min-h-screen flex-col items-center justify-center">
+    <main className="flex w-svw min-h-screen flex-col items-center justify-between">
       <Intro />
       <About />
       <Distance />
-      {/* <Conditions />
-      <Schedule />
+      <Conditions />
+      {/* <Schedule />
       <Goals />
       <Help />
       <Finish />

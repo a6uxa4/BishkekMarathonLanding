@@ -19,8 +19,8 @@ export default function Home() {
       <Conditions />
       <Schedule />
       <Goals />
-      {/* <Help />
-      <Finish />
+      <Help />
+      {/* <Finish />
       <Ending /> */}
     </main>
   );

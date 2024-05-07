@@ -15,8 +15,8 @@ export default function Home() {
     <main className="flex w-svw min-h-screen flex-col items-center justify-center">
       <Intro />
       <About />
-      {/* <Distance />
-      <Conditions />
+      <Distance />
+      {/* <Conditions />
       <Schedule />
       <Goals />
       <Help />

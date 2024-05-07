@@ -17,7 +17,7 @@ export const About = () => {
           ALA-ARCHA
         </motion.h1>
         <div className="w-[50%] h-full bg-customBlack text-customWhite flex items-center justify-center p-[59px]">
-          <p className="leading-14 text-[28px] font-extralight">
+          <p className="leading-14 text-[28px] font-light">
             Маршрут полумарафона пройдет в живописном национальном парке
             Ала-Арча. Участники смогут вдохнуть свежий горный воздух, делая этот
             маршрут не только спортивным вызовом, но и настоящим праздником для

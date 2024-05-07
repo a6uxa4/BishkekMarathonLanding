@@ -20,8 +20,8 @@ export default function Home() {
       <Schedule />
       <Goals />
       <Help />
-      {/* <Finish />
-      <Ending /> */}
+      <Finish />
+      {/* <Ending /> */}
     </main>
   );
 }

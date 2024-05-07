@@ -31,7 +31,7 @@ export const Help = () => {
           </p>
         </div>
       </section>
-      <section className="w-full h-[330px] bg-customWhite hidden sm:block snap-center">
+      <section className="w-full h-fit bg-customWhite hidden sm:block snap-center">
         <h1 className="text-customBlack text-[26px] font-bold uppercase pl-5 pr-10 mt-[20px]">
           Также На Марафоне будет
         </h1>

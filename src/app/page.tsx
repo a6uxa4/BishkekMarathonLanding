@@ -12,16 +12,16 @@ import { Schedule } from "@/screens/Schedule";
 
 export default function Home() {
   return (
-    <main className="flex w-svw min-h-screen flex-col items-center justify-between">
+    <main className="flex w-svw min-h-screen flex-col items-center justify-center">
       <Intro />
       <About />
-      <Distance />
+      {/* <Distance />
       <Conditions />
       <Schedule />
       <Goals />
       <Help />
       <Finish />
-      <Ending />
+      <Ending /> */}
     </main>
   );
 }

@@ -11,6 +11,15 @@ const config: Config = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      container: "1280px",
+      xl: { max: "1279px" },
+      lg: { max: "900px" },
+      md: { max: "768px" },
+      sm: { max: "640px" },
+      xs: { max: "440px" },
+      ls: { max: "320px" },
+    },
     extend: {
       colors: {
         customRed: "#DE0A36",

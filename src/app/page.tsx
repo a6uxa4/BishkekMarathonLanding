@@ -8,31 +8,11 @@ import { Finish } from "@/screens/Finish";
 import { Goals } from "@/screens/Goals";
 import { Help } from "@/screens/Help";
 import { Intro } from "@/screens/Intro";
-import { Partners } from "@/screens/Partners";
 import { Schedule } from "@/screens/Schedule";
-import clsx from "clsx";
-import { useMotionValueEvent, useScroll } from "framer-motion";
-import { useState } from "react";
 
 export default function Home() {
-  const { scrollY } = useScroll();
-  const [scrollValue, setScrollValue] = useState<number>(1);
-
-  useMotionValueEvent(scrollY, "change", (latest) => {
-    setScrollValue(latest);
-  });
-
-  console.log(scrollValue)
-
   return (
-    <main
-      className={clsx(
-        "flex w-svw min-h-screen flex-col items-center justify-between",
-        {
-          "overflow-auto": scrollValue >= 5509,
-        }
-      )}
-    >
+    <main className="flex w-svw min-h-screen flex-col items-center justify-between">
       <Intro />
       <About />
       <Distance />
@@ -42,7 +22,6 @@ export default function Home() {
       <Help />
       <Finish />
       <Ending />
-      <Partners />
     </main>
   );
 }

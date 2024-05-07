@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const { nextui } = require("@nextui-org/react");
 
 const config: Config = {
   content: [
@@ -7,6 +8,7 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/layout/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/screens/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -22,9 +24,10 @@ const config: Config = {
         conditions: "url('/images/Conditions.webp')",
         schedule: "url('/images/Schedule.webp')",
         ending: "url('/images/Ending.webp')",
+        finish: "url('/images/Finish.webp')",
       },
     },
   },
-  plugins: [],
+  plugins: [nextui()],
 };
 export default config;

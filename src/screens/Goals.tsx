@@ -6,8 +6,8 @@ export const Goals = () => {
           ЦЕЛИ МАРАФОНА
         </h1>
       </div>
-      <div className="w-[50%] h-full bg-customRed relative flex items-center justify-center">
-        <ul>
+      <div className="w-[50%] h-full bg-customRed relative flex items-center justify-start px-10">
+        <ul className="flex flex-col gap-5 text-customWhite text-lg">
           <li>&#10003; Повышение квалификации специалистов.</li>
           <li>&#10003; Популяризация массового любительского спорта.</li>
           <li>&#10003; Благотворительность.</li>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Header } from "@/layout/Header";
-import { Footer } from "@/layout/Footer";
+import { NextUIProvider } from "@nextui-org/react";
+import { Layout } from "@/layout";
 
 export const metadata: Metadata = {
   title: "Bishkek Marathon",
@@ -16,9 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />
-        {children}
-        <Footer />
+        <NextUIProvider>
+          <Layout>{children}</Layout>
+        </NextUIProvider>
       </body>
     </html>
   );

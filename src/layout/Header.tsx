@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion, useScroll, useSpring } from "framer-motion";
+import { NavbarTop } from "./Navbar";
 
 export const Header = () => {
   const { scrollYProgress } = useScroll();
@@ -11,7 +12,8 @@ export const Header = () => {
     restDelta: 0.001,
   });
   return (
-    <header className="w-full fixed bg-customBlack z-50">
+    <header className="w-full h-fit fixed bg-customBlack z-50">
+      <NavbarTop />
       <div className="w-full h-[67px] container py-4 mx-auto flex justify-between items-center">
         <div className="flex items-center justify-between">
           <Image src="/icon/Logo.png" alt="logo" width={128} height={26} />
@@ -43,7 +45,7 @@ export const Header = () => {
         </div>
       </div>
       <motion.div
-        className="fixed left-0 right-0 h-1 bg-customGreen top-[67px]"
+        className="fixed left-0 right-0 h-1 bg-customGreen top-[102px]"
         style={{ scaleX }}
       />
     </header>

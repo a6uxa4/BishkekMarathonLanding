@@ -17,8 +17,8 @@ export default function Home() {
       <About />
       <Distance />
       <Conditions />
-      {/* <Schedule />
-      <Goals />
+      <Schedule />
+      {/* <Goals />
       <Help />
       <Finish />
       <Ending /> */}

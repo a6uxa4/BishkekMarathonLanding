@@ -3,8 +3,13 @@
 import Image from "next/image";
 import { motion, useScroll, useSpring } from "framer-motion";
 import { NavbarTop } from "./Navbar";
+import clsx from "clsx";
+import { useState } from "react";
+import { Divider } from "@nextui-org/react";
+import Link from "next/link";
 
 export const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -62,27 +67,129 @@ export const Header = () => {
               <div className="w-[1px] h-full border"></div>
               <span>EN</span>
             </div>
-            <div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="28"
-                height="28"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-              >
-                <line x1="4" x2="20" y1="12" y2="12" />
-                <line x1="4" x2="20" y1="6" y2="6" />
-                <line x1="4" x2="20" y1="18" y2="18" />
-              </svg>
-            </div>
+            <motion.div
+              onClick={() => setIsOpen(!isOpen)}
+              className="w-5 h-5 flex flex-col justify-around relative z-40"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <div
+                className={clsx("w-full h-[2px] bg-customBlack rounded", {
+                  "rotate-45 absolute": isOpen,
+                })}
+              />
+              <div
+                className={clsx("w-full h-[2px] bg-customBlack rounded", {
+                  hidden: isOpen,
+                })}
+              />
+              <div
+                className={clsx("w-full h-[2px] bg-customBlack rounded", {
+                  "rotate-[-45deg] absolute": isOpen,
+                })}
+              />
+            </motion.div>
           </div>
         </div>
         <motion.div
           className="fixed left-0 right-0 h-[3px] bg-customRed top-[44px]"
           style={{ scaleX }}
         />
+        <div
+          className={clsx(
+            "w-[100vw] bg-white h-[300px] z-30 absolute top-0 transition-all px-5 py-5",
+            {
+              "!h-0 top-[-300px]": !isOpen,
+            }
+          )}
+        >
+          <div
+            className={clsx("transition-all duration-200", {
+              "opacity-0": !isOpen,
+            })}
+          >
+            <div className="w-full h-full uppercase flex flex-col gap-2">
+              <div>Локация</div>
+              <div>Расписание</div>
+              <div>Цели</div>
+              <div>О нас</div>
+            </div>
+          </div>
+          <Divider className="my-4" />
+          <div className="w-full h-full flex flex-col items-start justify-start gap-2">
+            <Link
+              className="flex items-center justify-center gap-3"
+              href="tel:+996707877745"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              +996 707 877 745
+            </Link>
+            <Link
+              className="flex items-center justify-center gap-3"
+              href="bishkekmarathon@gmail.com"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+              bishkekmarathon@gmail.com
+            </Link>
+            <div className="flex items-center justify-center gap-3">
+              Мы в соц. сетях
+              <Link
+                href="https://www.instagram.com/bishkek.marathon/"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                >
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                </svg>
+              </Link>
+              <Link href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path d="m22 2-7 20-4-9-9-4Z" />
+                  <path d="M22 2 11 13" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </div>
       </header>
     </>
   );

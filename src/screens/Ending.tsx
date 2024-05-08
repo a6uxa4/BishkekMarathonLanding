@@ -46,7 +46,10 @@ export const Ending = () => {
         </div>
         <div className="w-full h-[50%] bg-customBlack flex flex-col items-center justify-center gap-8 text-customWhite">
           <h1 className="font-bold">Контакты</h1>
-          <div className="flex items-center justify-center gap-3">
+          <Link
+            href="tel:+996707877745"
+            className="flex items-center justify-center gap-3"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -59,8 +62,11 @@ export const Ending = () => {
               <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
             </svg>
             +996 707 877 745
-          </div>
-          <div className="flex items-center justify-center gap-3">
+          </Link>
+          <Link
+            href="bishkekmarathon@gmail.com"
+            className="flex items-center justify-center gap-3"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -74,10 +80,13 @@ export const Ending = () => {
               <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
             </svg>
             bishkekmarathon@gmail.com
-          </div>
+          </Link>
           <div className="flex items-center justify-center gap-3">
             Мы в соц. сетях
-            <Link href="">
+            <Link
+              href="https://www.instagram.com/bishkek.marathon/"
+              target="_blank"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"

@@ -48,5 +48,26 @@
     "SLUG_6": "Strengthening the basic level of running and athletics.",
     "SLUG_7": "Investments in sports facilities and infrastructure.",
     "SLUG_8": "Promotion of healthy lifestyles and sports values."
+  },
+  "HELP": {
+    "TITLE": "Also at the marathon there will be",
+    "DESCRIBTION_1": "Medicaid support",
+    "DESCRIBTION_2": "Food and refreshment stations",
+    "PARAGRAPH_1": "Ambulances will be operating on the race course. At the There will be a medical center at the finish line. If any of the participants feel unwell, they will always be able to ask for help from medics, volunteers or any other staff of the sporting event. event.",
+    "PARAGRAPH_2": "There will be food and refreshment points along the marathon course. food and refreshment stations. For the most efficient organization, they are are located along a straight stretch of road and all stations are located directly next to the kilometer markers. "
+  },
+  "FINISH": {
+    "TITLE": "FINISH",
+    "DESCRIBTION_1": "The time limit for the marathon distance is",
+    "DESCRIBTION_2": "A competitor's personal result will be counted when he crosses the",
+    "SLUG_1": "6 hours.",
+    "SLUG_2": "finish line"
+  },
+  "ENDING": {
+    "TITLE": "Hurry up and sign up!",
+    "DESCRIBTION": "We are confident that our event will become a significant event for the city and its residents, promoting public health, developing sports culture and attracting tourists.",
+    "BUTTON": "Sign up for the marathon",
+    "SOCIAL": "We're on social media.",
+    "CONTACT": "Contacts"
   }
 }

@@ -1,32 +1,30 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 
 export const Ending = () => {
+  const t = useTranslations("ENDING");
   return (
     <>
       <section className="w-[100vw] h-[100vh] flex justify-center items-center snap-center bg-ending object-cover bg-no-repeat bg-cover sm:hidden">
         <div className="w-[50%] h-full flex items-center justify-center">
           <div className="w-[643px] h-[495px] bg-customGreen rounded-sm px-12 py-20">
-            <p className="text-[24px] font-light">
-              Мы уверены, что наше мероприятие станет значимым событием для
-              города и его жителей, способствуя укреплению общественного
-              здоровья, развитию спортивной культуры и привлечению туристов.
-            </p>
+            <p className="text-[24px] font-light">{t("DESCRIBTION")}</p>
             <br />
             <br />
             <br />
             <br />
-            <p className="text-[24px] font-light">Скорее записывайтесь!</p>
+            <p className="text-[24px] font-light">{t("TITLE")}</p>
           </div>
         </div>
         <div className="w-[50%] h-full flex items-center justify-center">
           <button className="overflow-hidden relative w-[260px] font-light text-lg h-10 border border-customGreen text-white rounded-md cursor-pointer z-10 group">
-            Записаться на марафон
+            {t("BUTTON")}
             <span className="absolute w-[267px] h-32 -top-8 -left-2 bg-customWhite rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-300 duration-700 origin-right"></span>
             <span className="absolute w-[267px] h-32 -top-8 -left-2 bg-customGreen rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-500 origin-right"></span>
             <span className="absolute w-[267px] h-32 -top-8 -left-2 bg-customRed rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-300 origin-right"></span>
             <span className="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute left-[10%] right-[10%] z-10">
-              Записаться на марафон
+              {t("BUTTON")}
             </span>
           </button>
         </div>
@@ -34,18 +32,16 @@ export const Ending = () => {
       <section className="w-full h-[610px] hidden sm:block">
         <div className="w-full h-[50%] bg-ending bg-cover flex flex-col items-start justify-center pl-4">
           <p className="text-[14px] font-light text-customWhite">
-            Мы уверены, что наше мероприятие станет значимым событием для города
-            и его жителей, способствуя укреплению общественного здоровья,
-            развитию спортивной культуры и привлечению туристов.
+            {t("DESCRIBTION")}
           </p>
           <br />
           <br />
           <p className="text-[14px] font-light text-customWhite">
-            Скорее записывайтесь!
+            {t("TITLE")}
           </p>
         </div>
         <div className="w-full h-[50%] bg-customBlack flex flex-col items-center justify-center gap-8 text-customWhite">
-          <h1 className="font-bold">Контакты</h1>
+          <h1 className="font-bold">{t("CONTACT")}</h1>
           <Link
             href="tel:+996707877745"
             className="flex items-center justify-center gap-3"
@@ -82,7 +78,7 @@ export const Ending = () => {
             bishkekmarathon@gmail.com
           </Link>
           <div className="flex items-center justify-center gap-3">
-            Мы в соц. сетях
+            {t("SOCIAL")}
             <Link
               href="https://www.instagram.com/bishkek.marathon/"
               target="_blank"

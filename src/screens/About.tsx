@@ -23,14 +23,11 @@ export const About = () => {
           transition={{ duration: 1, delay: 1 }}
           className="absolute text-customGreen z-20 text-[48px] font-bold bottom-32"
         >
-          ALA-ARCHA
+          {t("TITLE")}
         </motion.h1>
         <div className="w-[50%] h-full bg-customBlack text-customWhite flex items-center justify-center p-[59px]">
           <p className="leading-14 text-[28px] font-light">
-            Маршрут полумарафона пройдет в живописном национальном парке
-            Ала-Арча. Участники смогут вдохнуть свежий горный воздух, делая этот
-            маршрут не только спортивным вызовом, но и настоящим праздником для
-            души.
+            {t("DESCRIBTION")}
           </p>
         </div>
         <motion.div
@@ -66,13 +63,10 @@ export const About = () => {
             transition={{ duration: 1, delay: 1 }}
             className="text-customGreen text-[18px] font-bold"
           >
-            ALA-ARCHA
+            {t("TITLE")}
           </motion.h1>
           <p className="leading-14 text-[14px] font-light text-customWhite">
-            Маршрут полумарафона пройдет в живописном национальном парке
-            Ала-Арча. Участники смогут вдохнуть свежий горный воздух, делая этот
-            маршрут не только спортивным вызовом, но и настоящим праздником для
-            души.
+            {t("DESCRIBTION")}
           </p>
         </div>
         <div className="w-[40%] h-full bg-customBlack text-customWhite flex items-center justify-center p-[59px]"></div>

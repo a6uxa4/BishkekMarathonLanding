@@ -15,5 +15,9 @@
     "INTRO_DESC": "ALA-ARCHA",
     "BUTTON_TEXT": "More",
     "BUTTON_TEXT_MOBILE": "Register"
+  },
+  "ABOUT": {
+    "TITLE": "ALA-ARCHA",
+    "DESCRIBTION": "The route of the half marathon will take place in a picturesque national park Ala-Archa National Park. Participants will be able to breathe in the fresh mountain air, making this route not only a sporting challenge, but also a real holiday for the soul."
   }
 }

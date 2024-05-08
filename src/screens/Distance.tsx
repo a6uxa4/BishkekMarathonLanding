@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export const Distance = () => {
+  const t = useTranslations("ABOUT");
   return (
     <>
       <section className="w-[100vw] h-[100vh] flex justify-center items-center snap-center sm:hidden">

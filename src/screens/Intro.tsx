@@ -4,7 +4,7 @@ const visible = { opacity: 1, y: 0, transition: { duration: 1 } };
 
 export const Intro = () => {
   return (
-    <section className="w-[100vw] h-[100vh] flex justify-center items-center snap-center bg-banner bg-cover bg-center sm:h-[350px]">
+    <section className="w-[100vw] h-[100vh] flex justify-center items-center snap-center bg-banner bg-cover bg-center sm:h-[350px] sm:snap-align-none">
       <motion.article
         className="flex flex-col items-center justify-center gap-5"
         initial="hidden"

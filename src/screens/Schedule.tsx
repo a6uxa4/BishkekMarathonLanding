@@ -56,7 +56,7 @@ export const Schedule = () => {
           </div>
         </div>
       </section>
-      <section className="w-full h-[520px] snap-center bg-schedule bg-cover bg-center relative sm:flex flex-col items-center justify-center hidden gap-5">
+      <section className="w-full h-[520px] bg-schedule bg-cover bg-center relative sm:flex flex-col items-center justify-center hidden gap-5">
         <div className="w-full h-full absolute bg-customBlack/70"></div>
         <div className="flex items-center justify-center flex-col text-customGreen font-semibold z-20 mt-5">
           <h1 className="text-[22px]">Расписание на</h1>

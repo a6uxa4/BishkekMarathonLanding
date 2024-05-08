@@ -31,7 +31,7 @@ export const Ending = () => {
           </button>
         </div>
       </section>
-      <section className="w-full h-[610px] snap-center hidden sm:block">
+      <section className="w-full h-[610px] hidden sm:block">
         <div className="w-full h-[50%] bg-ending bg-cover flex flex-col items-start justify-center pl-4">
           <p className="text-[14px] font-light text-customWhite">
             Мы уверены, что наше мероприятие станет значимым событием для города

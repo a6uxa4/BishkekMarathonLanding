@@ -114,7 +114,7 @@ export const Distance = () => {
           </motion.div>
         </div>
       </section>
-      <section className="w-[100vw] h-[400px] justify-center items-center snap-center hidden sm:flex flex-col">
+      <section className="w-[100vw] h-[400px] justify-center items-center hidden sm:flex flex-col">
         <div className="w-full h-[45%] bg-customWhite text-[28px] px-5 font-bold flex items-center pr-20 leading-9 uppercase">
           Возможность преодолеть Дистанции
         </div>

@@ -9,3 +9,9 @@ html {
 *::-webkit-scrollbar {
   display: none;
 }
+
+@media (max-width: 768px) {
+  html {
+    scroll-snap-type: none;
+  }
+}

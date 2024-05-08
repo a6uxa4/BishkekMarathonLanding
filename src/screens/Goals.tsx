@@ -22,7 +22,7 @@ export const Goals = () => {
           </ul>
         </div>
       </section>
-      <section className="w-full h-[635px] snap-center hidden sm:block">
+      <section className="w-full h-[635px] hidden sm:block">
         <div className="w-full h-[145px] bg-customBlack pl-5 pr-24 flex items-center">
           <h1 className="text-customWhite text-[26px] font-bold">
             ЦЕЛИ МАРАФОНА

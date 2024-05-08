@@ -47,7 +47,7 @@ export const Conditions = () => {
           <div className="w-full h-full bg-customGreen opacity-30"></div>
         </div>
       </section>
-      <section className="w-screen h-[460px] hidden sm:block snap-center">
+      <section className="w-screen h-[460px] hidden sm:block">
         <div className="w-full h-[220px] bg-conditionsM"></div>
         <div className="w-full h-[240px] bg-customBlack flex flex-col items-center py-5">
           <h1 className="text-customWhite text-[22px] font-semibold">
@@ -56,12 +56,12 @@ export const Conditions = () => {
           <ul className="w-full h-full px-8 flex flex-col gap-5">
             {data.map((item, index) => (
               <motion.li
-                className="text-[14px] font-extralight text-customGreen border-b py-2 border-customGreen cursor-pointer"
+                className="text-[14px] font-extralight text-customGreen border-b py-2 border-customGreen"
                 key={index}
                 variants={{
                   initial: {
                     opacity: 0,
-                    x: 50,
+                    x: 20,
                   },
                   animate: {
                     opacity: 1,

@@ -53,8 +53,8 @@ export const Header = () => {
       </header>
       <header className="w-full h-[46px] fixed bg-customWhite z-50 hidden sm:block">
         <div className="w-full h-[46px] container py-4 mx-auto flex justify-between items-center px-5">
-          <div className="flex items-center justify-between bg-customBlack">
-            <Image src="/icon/Logo.png" alt="logo" width={86} height={16} />
+          <div className="flex items-center justify-between">
+            <Image src="/icon/LogoDark.png" alt="logo" width={86} height={16} />
           </div>
           <div className="flex items-center justify-center gap-5">
             <div className="w-[48px] h-[33px] flex items-center justify-center gap-1">

@@ -1,5 +1,5 @@
 export const Finish = () => (
-  <section className="w-[100vw] h-[100vh] flex justify-center items-center snap-center sm:h-[375px]">
+  <section className="w-[100vw] h-[100vh] flex justify-center items-center snap-center sm:h-[375px] sm:snap-align-none">
     <div className="w-[50%] h-full bg-customRed flex flex-col items-start justify-center gap-5 px-24 sm:hidden">
       <h1 className="text-customGreen text-[50px]">ФИНИШ</h1>
       <div className="flex flex-col gap-10 text-[20px] pr-24">

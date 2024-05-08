@@ -1,7 +1,15 @@
+import { useSectionInView } from "@/hooks/useSectionInView";
+
 export const Goals = () => {
+  const { ref } = useSectionInView("Расписание");
+
   return (
     <>
-      <section className="w-[100vw] h-[100vh] flex justify-center items-center snap-center sm:hidden">
+      <section
+        ref={ref}
+        id="goals"
+        className="w-[100vw] h-[100vh] flex justify-center items-center snap-center sm:hidden"
+      >
         <div className="w-[50%] h-full bg-customBlack relative flex items-center justify-center">
           <h1 className="text-customWhite text-[46px] font-bold w-[300px]">
             ЦЕЛИ МАРАФОНА
@@ -22,7 +30,7 @@ export const Goals = () => {
           </ul>
         </div>
       </section>
-      <section className="w-full h-[635px] hidden sm:block">
+      <section className="w-full h-[635px] hidden sm:block scroll-mt-12">
         <div className="w-full h-[145px] bg-customBlack pl-5 pr-24 flex items-center">
           <h1 className="text-customWhite text-[26px] font-bold">
             ЦЕЛИ МАРАФОНА

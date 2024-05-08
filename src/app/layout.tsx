@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { NextUIProvider } from "@nextui-org/react";
+
 import { Layout } from "@/layout";
+import { NextUIProvider } from "@/providers/NextUI";
+import ActiveSectionContextProvider from "@/providers/ActiveSection";
 
 export const metadata: Metadata = {
   title: "Bishkek Marathon",
@@ -17,7 +19,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <NextUIProvider>
-          <Layout>{children}</Layout>
+          <ActiveSectionContextProvider>
+            <Layout>{children}</Layout>
+          </ActiveSectionContextProvider>
         </NextUIProvider>
       </body>
     </html>

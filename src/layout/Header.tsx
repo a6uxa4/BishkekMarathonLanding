@@ -7,8 +7,13 @@ import clsx from "clsx";
 import { useState } from "react";
 import { Divider } from "@nextui-org/react";
 import Link from "next/link";
+import { NAV_LINKS } from "@/utils/constants";
+import { useActiveSectionContext } from "@/providers/ActiveSection";
 
 export const Header = () => {
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
+
   const [isOpen, setIsOpen] = useState(false);
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
@@ -27,18 +32,20 @@ export const Header = () => {
           </div>
           <div className="relative inset-x-0 z-20 w-auto h-[67px] px-6 py-4 flex items-center justify-end">
             <div className="flex flex-row mx-6">
-              <span className="group my-2 text-customWhite mx-10 font-light text-lg transition duration-200 cursor-pointer">
-                Расписание
-                <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[1px] bg-customGreen mt-[1px]"></span>
-              </span>
-              <span className="group my-2 text-customWhite mx-10 font-light text-lg transition duration-200 cursor-pointer">
-                Цели
-                <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[1px] bg-customGreen mt-[1px]"></span>
-              </span>
-              <span className="group my-2 text-customWhite mx-10 font-light text-lg transition duration-200 cursor-pointer">
-                О нас
-                <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[1px] bg-customGreen mt-[1px]"></span>
-              </span>
+              {NAV_LINKS.map((item) => (
+                <Link
+                  href={item.hash}
+                  onClick={() => {
+                    setActiveSection(item.name);
+                    setTimeOfLastClick(Date.now());
+                  }}
+                  key={item.name}
+                  className="group my-2 text-customWhite mx-10 font-light text-lg transition duration-200 cursor-pointer"
+                >
+                  {item.name}
+                  <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[1px] bg-customGreen mt-[1px]"></span>
+                </Link>
+              ))}
             </div>
             <button className="overflow-hidden relative w-[199px] font-light text-lg h-8 border border-customGreen bg-black text-white rounded-md cursor-pointer z-10 group">
               Записаться
@@ -109,10 +116,19 @@ export const Header = () => {
             })}
           >
             <div className="w-full h-full uppercase flex flex-col gap-2">
-              <div>Локация</div>
-              <div>Расписание</div>
-              <div>Цели</div>
-              <div>О нас</div>
+              {NAV_LINKS.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.hash}
+                  onClick={() => {
+                    setActiveSection(item.name);
+                    setTimeOfLastClick(Date.now());
+                    setIsOpen(false);
+                  }}
+                >
+                  {item.name}
+                </Link>
+              ))}
             </div>
           </div>
           <Divider className="my-4" />

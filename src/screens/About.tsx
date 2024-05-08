@@ -1,3 +1,4 @@
+import { useSectionInView } from "@/hooks/useSectionInView";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -5,9 +6,15 @@ const hiddenMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(
 const visibleMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 30px)`;
 
 export const About = () => {
+  const { ref } = useSectionInView("Локация");
+
   return (
     <>
-      <section className="w-[100vw] h-[100vh] flex justify-center items-center snap-center relative sm:hidden">
+      <section
+        ref={ref}
+        id="location"
+        className="w-[100vw] h-[100vh] flex justify-center items-center snap-center relative sm:hidden"
+      >
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -49,7 +56,7 @@ export const About = () => {
           />
         </motion.div>
       </section>
-      <section className="w-[100vw] h-[350px] hidden sm:flex relative">
+      <section className="w-[100vw] h-[350px] hidden sm:flex relative scroll-mt-12">
         <div className="w-full h-full absolute z-20 flex flex-col items-start justify-center px-5 gap-3">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}

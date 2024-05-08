@@ -6,10 +6,13 @@ import { Fragment } from "react";
 import clsx from "clsx";
 import { usePathname, useRouter } from "next/navigation";
 import { COUNTRY } from "@/utils/constants";
+import { useTranslations } from "next-intl";
 
 export const NavbarTop = () => {
   const pathName = usePathname();
   const { replace } = useRouter();
+
+  const t = useTranslations("NAVBAR");
 
   return (
     <Navbar
@@ -61,7 +64,7 @@ export const NavbarTop = () => {
       </NavbarContent>
       <NavbarContent justify="end" className="w-full h-[35px]">
         <NavbarItem className="flex items-center justify-center gap-3">
-          Мы в соц. сетях
+          {t('SOCIAL')}
           <Link
             href="https://www.instagram.com/bishkek.marathon/"
             target="_blank"

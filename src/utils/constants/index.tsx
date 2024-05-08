@@ -1,8 +1,8 @@
 export const NAV_LINKS = [
-  { name: "Локация", hash: "/#location" },
-  { name: "Расписание", hash: "/#schedule" },
-  { name: "Цели", hash: "/#goals" },
-  { name: "О нас", hash: "/#about" },
+  { name: "LOCATION", hash: "/#location" },
+  { name: "SCHEDULE", hash: "/#schedule" },
+  { name: "GOALS", hash: "/#goals" },
+  { name: "ABOUT", hash: "/#about" },
 ];
 
 export const COUNTRY = [

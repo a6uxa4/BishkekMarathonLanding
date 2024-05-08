@@ -10,9 +10,12 @@ import Link from "next/link";
 import { NAV_LINKS } from "@/utils/constants";
 import { useActiveSectionContext } from "@/providers/ActiveSection";
 import { usePathname, useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 export const Header = () => {
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
+  const t = useTranslations("HEADER");
 
   const [isOpen, setIsOpen] = useState(false);
   const { scrollYProgress } = useScroll();
@@ -45,7 +48,7 @@ export const Header = () => {
                   key={item.name}
                   className="group my-2 text-customWhite mx-10 font-light text-lg transition duration-200 cursor-pointer"
                 >
-                  {item.name}
+                  {t(item.name)}
                   <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[1px] bg-customGreen mt-[1px]"></span>
                 </Link>
               ))}
@@ -143,7 +146,7 @@ export const Header = () => {
                     setIsOpen(false);
                   }}
                 >
-                  {item.name}
+                  {t(item.name)}
                 </Link>
               ))}
             </div>
@@ -186,7 +189,7 @@ export const Header = () => {
               bishkekmarathon@gmail.com
             </Link>
             <div className="flex items-center justify-center gap-3">
-              Мы в соц. сетях
+              {t("SOCIAL")}
               <Link
                 href="https://www.instagram.com/bishkek.marathon/"
                 target="_blank"

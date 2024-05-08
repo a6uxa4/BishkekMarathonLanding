@@ -19,5 +19,34 @@
   "ABOUT": {
     "TITLE": "ALA-ARCHA",
     "DESCRIBTION": "The route of the half marathon will take place in a picturesque national park Ala-Archa National Park. Participants will be able to breathe in the fresh mountain air, making this route not only a sporting challenge, but also a real holiday for the soul."
+  },
+  "DISTANCE": {
+    "TITLE": "ABILITY TO COVER DISTANCES"
+  },
+  "CONDITIONS": {
+    "TITLE": "To participate you need to",
+    "SLUG_1": "ID card",
+    "SLUG_2": "Participation in the race is from the age of 15",
+    "SLUG_3": "Starting fee 2000"
+  },
+  "SCHEDULE": {
+    "TITLE": "Schedule for",
+    "SLUG_1": "Discovery",
+    "SLUG_2": "Warm up before the start",
+    "SLUG_3": "ANTHEM KR with participation of the Kyrgyz National Conservatory named after K. K. Kovalev. K. Moldobasanov.",
+    "SLUG_4": "Starting from different distances",
+    "SLUG_5": "Awarding",
+    "SLUG_6": "Closure"
+  },
+  "GOALS": {
+    "TITLE": "MARATHON OBJECTIVES",
+    "SLUG_1": "Professional development for specialists.",
+    "SLUG_2": "Popularization of mass amateur sports.",
+    "SLUG_3": "Philanthropy.",
+    "SLUG_4": "Developing strategies to promote sport.",
+    "SLUG_5": "Supporting youth development programs through sport",
+    "SLUG_6": "Strengthening the basic level of running and athletics.",
+    "SLUG_7": "Investments in sports facilities and infrastructure.",
+    "SLUG_8": "Promotion of healthy lifestyles and sports values."
   }
 }

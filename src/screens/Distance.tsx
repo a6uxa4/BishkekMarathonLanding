@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 
 export const Distance = () => {
-  const t = useTranslations("ABOUT");
+  const t = useTranslations("DISTANCE");
   return (
     <>
       <section className="w-[100vw] h-[100vh] flex justify-center items-center snap-center sm:hidden">
@@ -25,7 +25,7 @@ export const Distance = () => {
             whileInView="animate"
             className="text-[52px] font-bold font-sans p-10 uppercase"
           >
-            Возможность преодолеть Дистанции
+            {t("TITLE")}
           </motion.h1>
         </div>
         <div className="w-[50%] h-full">
@@ -118,7 +118,7 @@ export const Distance = () => {
       </section>
       <section className="w-[100vw] h-[400px] justify-center items-center hidden sm:flex flex-col">
         <div className="w-full h-[45%] bg-customWhite text-[28px] px-5 font-bold flex items-center pr-20 leading-9 uppercase">
-          Возможность преодолеть Дистанции
+          {t("TITLE")}
         </div>
         <div className="w-full h-[30%] flex items-center justify-center">
           <div className="w-[50%] h-full bg-customGreen text-customBlack font-bold text-[30px] flex items-center justify-center">

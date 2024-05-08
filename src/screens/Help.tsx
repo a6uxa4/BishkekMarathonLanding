@@ -1,6 +1,9 @@
 import { Accordion, AccordionItem } from "@nextui-org/react";
+import { useTranslations } from "next-intl";
 
 export const Help = () => {
+  const t = useTranslations("HELP");
+
   return (
     <>
       <section className="w-[100vw] h-[100vh] flex justify-center items-center snap-center relative sm:hidden">

@@ -7,6 +7,13 @@
     "SCHEDULE": "Расписание",
     "GOALS": "Цели",
     "ABOUT": "О нас",
-    "SOCIAL": "Мы в соц. сетях"
+    "SOCIAL": "Мы в соц. сетях",
+    "BUTTON_TEXT": "Записаться"
+  },
+  "INTRO": {
+    "INTRO_TITLE": "БИШКЕК МАРАФОН",
+    "INTRO_DESC": "АЛА-АРЧА",
+    "BUTTON_TEXT": "Подробнее",
+    "BUTTON_TEXT_MOBILE": "Зарегистрироваться"
   }
 }

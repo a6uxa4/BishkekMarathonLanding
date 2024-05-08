@@ -7,6 +7,13 @@
     "SCHEDULE": "Schedule",
     "GOALS": "Goals",
     "ABOUT": "About us",
-    "SOCIAL": "We're on social media."
+    "SOCIAL": "We're on social media.",
+    "BUTTON_TEXT": "Check in"
+  },
+  "INTRO": {
+    "INTRO_TITLE": "BISHKEK MARATHON",
+    "INTRO_DESC": "ALA-ARCHA",
+    "BUTTON_TEXT": "More",
+    "BUTTON_TEXT_MOBILE": "Register"
   }
 }

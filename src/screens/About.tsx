@@ -1,5 +1,6 @@
 import { useSectionInView } from "@/hooks/useSectionInView";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const hiddenMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 30px, rgba(0,0,0,1) 30px, rgba(0,0,0,1) 30px)`;
@@ -7,6 +8,7 @@ const visibleMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba
 
 export const About = () => {
   const { ref } = useSectionInView("Локация");
+  const t = useTranslations("ABOUT");
 
   return (
     <>

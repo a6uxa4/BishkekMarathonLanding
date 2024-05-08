@@ -10,7 +10,7 @@ export const Help = () => {
         <div className="absolute text-customBlack z-20 text-[36px] uppercase top-[150px]">
           {t("TITLE")}
         </div>
-        <div className="w-[50%] h-full bg-customGreen flex flex-col items-start justify-center gap-5 mt-5">
+        <div className="w-[50%] h-full bg-customGreen flex flex-col items-start justify-start gap-5 pt-[20%]">
           <div className="w-full h-[42px] bg-customWhite flex items-center justify-start text-[26px] px-14 uppercase">
             {t("DESCRIBTION_1")}
           </div>
@@ -18,7 +18,7 @@ export const Help = () => {
             {t("PARAGRAPH_1")}
           </p>
         </div>
-        <div className="w-[50%] h-full bg-customWhite flex flex-col items-start justify-center gap-5 mt-5">
+        <div className="w-[50%] h-full bg-customWhite flex flex-col items-start justify-start gap-5 pt-[20%]">
           <div className="w-full h-[42px] bg-customGreen flex items-center justify-start text-[26px] px-14 uppercase">
             {t("DESCRIBTION_2")}
           </div>

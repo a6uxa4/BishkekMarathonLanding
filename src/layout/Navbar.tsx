@@ -23,7 +23,7 @@ export const NavbarTop = () => {
       shouldHideOnScroll
       className="w-full h-[35px] flex items-center justify-center bg-customWhite"
     >
-      <NavbarContent className="w-full h-[35px]">
+      <NavbarContent justify="start" className="w-full h-[35px]">
         <NavbarItem>
           <Link
             className="flex items-center justify-center gap-3"
@@ -44,7 +44,7 @@ export const NavbarTop = () => {
           </Link>
         </NavbarItem>
       </NavbarContent>
-      <NavbarContent className="w-full h-[35px]">
+      <NavbarContent justify="center" className="w-full h-[35px]">
         <NavbarItem>
           <Link
             className="flex items-center justify-center gap-3"
@@ -66,7 +66,7 @@ export const NavbarTop = () => {
           </Link>
         </NavbarItem>
       </NavbarContent>
-      <NavbarContent className="w-full h-[35px]">
+      <NavbarContent justify="end" className="w-full h-[35px]">
         <NavbarItem className="flex items-center justify-center gap-3">
           Мы в соц. сетях
           <Link
@@ -104,7 +104,7 @@ export const NavbarTop = () => {
           </Link>
         </NavbarItem>
       </NavbarContent>
-      <NavbarContent className="w-full h-[20px]">
+      <NavbarContent className="w-full h-[20px] ml-10">
         <NavbarItem className="tabs relative flex items-center justify-center">
           {["EN", "RU"].map((tab, index) => (
             <Fragment key={index}>

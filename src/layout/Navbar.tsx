@@ -48,7 +48,7 @@ export const NavbarTop = () => {
         <NavbarItem>
           <Link
             className="flex items-center justify-center gap-3"
-            href="bishkekmarathon@gmail.com"
+            href="mailto:bishkekmarathon@gmail.com"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

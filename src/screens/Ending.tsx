@@ -64,7 +64,7 @@ export const Ending = () => {
             +996 707 877 745
           </Link>
           <Link
-            href="bishkekmarathon@gmail.com"
+            href="mailto:bishkekmarathon@gmail.com"
             className="flex items-center justify-center gap-3"
           >
             <svg

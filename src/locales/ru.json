@@ -1,0 +1,30 @@
+{
+  "HEADER": {
+    "HOME": "Главная",
+    "ABOUT": "О нас",
+    "SERVICES": "Услуги",
+    "PRICING": "Цены",
+    "CONTACT": "Контакты"
+  },
+  "PRICING": {
+    "CASUAL": "ПОВСЕДНЕВНЫЙ",
+    "PRICING_CASUAL": "БЕСПЛАТНО",
+    "SLUG_CASUAL_ONE": "До 5 проектов",
+    "SLUG_CASUAL_TWO": "До 10 Партнеров",
+    "SLUG_CASUAL_THREE": "2 ГБ памяти",
+    "PROFESSIONAL": "ПРОФЕССИОНАЛЬНЫЙ",
+    "PRICING_PROFESSIONAL": "2713руб/месяц",
+    "SLUG_PROFESSIONAL_ONE": "До 10 проектов",
+    "SLUG_PROFESSIONAL_TWO": "До 20 Партнеров",
+    "SLUG_PROFESSIONAL_THREE": "10 ГБ памяти",
+    "SLUG_PROFESSIONAL_FOUR": "Сотрудничество в режиме реального времени",
+    "EXPERT": "ЭКСПЕРТ",
+    "PRICING_EXPERT": "4678руб/месяц",
+    "SLUG_EXPERT_ONE": "Неограниченное количество проектов",
+    "SLUG_EXPERT_TWO": "Неограниченное количество партнеров",
+    "SLUG_EXPERT_THREE": "Неограниченное хранилище",
+    "SLUG_EXPERT_FOUR": "Сотрудничество в режиме реального времени",
+    "SLUG_EXPERT_FIVE": "24x7 Поддержка",
+    "BUTTON": "Начать пробную версию"
+  }
+}

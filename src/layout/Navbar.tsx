@@ -1,22 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import {
-  Navbar,
-  NavbarBrand,
-  NavbarContent,
-  NavbarItem,
-  Button,
-} from "@nextui-org/react";
-import { Fragment, useState } from "react";
+import { Navbar, NavbarContent, NavbarItem } from "@nextui-org/react";
+import { Fragment } from "react";
 import clsx from "clsx";
+import { usePathname, useRouter } from "next/navigation";
+import { COUNTRY } from "@/utils/constants";
 
 export const NavbarTop = () => {
-  const [activeTab, setActiveTab] = useState(0);
-
-  const handleTabClick = (index: number) => {
-    setActiveTab(index);
-  };
+  const pathName = usePathname();
+  const { replace } = useRouter();
 
   return (
     <Navbar
@@ -106,23 +99,22 @@ export const NavbarTop = () => {
       </NavbarContent>
       <NavbarContent className="w-full h-[20px] ml-10">
         <NavbarItem className="tabs relative flex items-center justify-center">
-          {["EN", "RU"].map((tab, index) => (
+          {COUNTRY.map((tab, index) => (
             <Fragment key={index}>
               <input
                 type="radio"
-                id={`radio-${index + 1}`}
+                id={`radio-${tab.lang}`}
                 name="tabs"
-                checked={activeTab === index}
-                onChange={() => handleTabClick(index)}
+                onChange={() => replace(tab.lang)}
                 className="hidden"
               />
               <label
-                htmlFor={`radio-${index + 1}`}
+                htmlFor={`radio-${tab.lang}`}
                 className={`tab flex items-center justify-center w-12 font-normal cursor-pointer transition-colors duration-150 z-40 ${
-                  index === 1 ? "border-l-1" : ""
+                  tab.lang === "/ru" ? "border-l-1" : ""
                 }`}
               >
-                {tab}
+                {tab.name}
               </label>
             </Fragment>
           ))}
@@ -130,11 +122,13 @@ export const NavbarTop = () => {
             className={clsx(
               "glider absolute top-0 left-0 h-full w-12 bg-customGreen transition-transform duration-250",
               {
-                "rounded-tl-full rounded-bl-full": activeTab === 0,
-                "rounded-tr-full rounded-br-full": activeTab === 1,
+                "rounded-tl-full rounded-bl-full": pathName === "/en",
+                "rounded-tr-full rounded-br-full": pathName === "/ru",
               }
             )}
-            style={{ transform: `translateX(${activeTab * 100}%)` }}
+            style={{
+              transform: `translateX(${pathName === "/en" ? 0 : 1 * 100}%)`,
+            }}
           ></span>
         </NavbarItem>
       </NavbarContent>

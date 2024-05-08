@@ -9,13 +9,16 @@ import { Divider } from "@nextui-org/react";
 import Link from "next/link";
 import { NAV_LINKS } from "@/utils/constants";
 import { useActiveSectionContext } from "@/providers/ActiveSection";
+import { usePathname, useRouter } from "next/navigation";
 
 export const Header = () => {
-  const { activeSection, setActiveSection, setTimeOfLastClick } =
-    useActiveSectionContext();
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   const [isOpen, setIsOpen] = useState(false);
   const { scrollYProgress } = useScroll();
+  const pathName = usePathname();
+  const { replace } = useRouter();
+
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
@@ -69,10 +72,24 @@ export const Header = () => {
             <Image src="/icon/LogoDark.png" alt="logo" width={86} height={16} />
           </div>
           <div className="flex items-center justify-center gap-5">
-            <div className="w-[48px] h-[33px] flex items-center justify-center gap-1">
-              <span>RU</span>
+            <div className="w-[48px] h-[33px] flex items-center justify-center gap-1 cursor-pointer">
+              <span
+                onClick={() => replace("/ru")}
+                className={clsx("p-1 rounded-sm", {
+                  "bg-[gray]/20": pathName === "/ru",
+                })}
+              >
+                RU
+              </span>
               <div className="w-[1px] h-full border"></div>
-              <span>EN</span>
+              <span
+                onClick={() => replace("/en")}
+                className={clsx("p-1 rounded-sm", {
+                  "bg-[gray]/20": pathName === "/en",
+                })}
+              >
+                EN
+              </span>
             </div>
             <motion.div
               onClick={() => setIsOpen(!isOpen)}

@@ -21,7 +21,7 @@ export default function Home() {
       <Goals />
       <Help />
       <Finish />
-      {/* <Ending /> */}
+      <Ending />
     </main>
   );
 }

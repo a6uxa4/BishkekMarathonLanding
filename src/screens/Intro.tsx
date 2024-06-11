@@ -54,7 +54,7 @@ export const Intro = () => {
             }}
             className="text-[28px] font-bold text-center text-customGreen tracking-wider top-[-18vw] sm:text-[18px]"
           >
-            02.06.2024
+            07.07.2024
           </motion.h1>
         </div>
         <Link

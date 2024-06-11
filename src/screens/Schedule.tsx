@@ -18,7 +18,7 @@ export const Schedule = () => {
               {t("TITLE")}
             </h1>
             <span className="text-customGreen text-[40px] font-extralight">
-              02.06.2024
+              07.07.2024
             </span>
           </div>
         </div>
@@ -67,7 +67,7 @@ export const Schedule = () => {
         <div className="w-full h-full absolute bg-customBlack/70"></div>
         <div className="flex items-center justify-center flex-col text-customGreen font-semibold z-20 mt-5">
           <h1 className="text-[22px]">{t("TITLE")}</h1>
-          <h1 className="text-[18px]">02.06.2024</h1>
+          <h1 className="text-[18px]">07.07.2024</h1>
         </div>
         <div className="w-full h-full flex px-5 z-20 gap-5">
           <div className="w-[40%] h-full flex flex-col justify-around">

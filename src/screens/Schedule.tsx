@@ -28,37 +28,37 @@ export const Schedule = () => {
               <h1 className="w-[160px] text-customGreen group-hover:text-customBlack">
                 07:00 - 07:35
               </h1>
-              <p>{t("SLUG_1")}</p>
+              {/* <p>{t("SLUG_1")}</p> */}
             </div>
             <div className="group flex items-center p-3 text-[25px] gap-[100px] pl-20 hover:bg-customWhite transition-all duration-300 cursor-pointer text-customWhite hover:text-customBlack">
               <h1 className="w-[160px] text-customGreen group-hover:text-customBlack">
                 07:35 - 08:45
               </h1>
-              <p>{t("SLUG_2")}</p>
+              {/* <p>{t("SLUG_2")}</p> */}
             </div>
             <div className="group flex items-center p-3 text-[25px] gap-[100px] pl-20 hover:bg-customWhite transition-all duration-300 cursor-pointer text-customWhite hover:text-customBlack">
               <h1 className="min-w-[160px] text-customGreen group-hover:text-customBlack">
                 08:45 - 09:00
               </h1>
-              <p className="text-[20px]">{t("SLUG_3")}</p>
+              <p className="text-[20px]">{/* {t("SLUG_3")} */}</p>
             </div>
             <div className="group flex items-center p-3 text-[25px] gap-[100px] pl-20 hover:bg-customWhite transition-all duration-300 cursor-pointer text-customWhite hover:text-customBlack">
               <h1 className="w-[160px] text-customGreen group-hover:text-customBlack">
                 09:00 - 09:20
               </h1>
-              <p>{t("SLUG_4")}</p>
+              <p>{/* {t("SLUG_4")} */}</p>
             </div>
             <div className="group flex items-center p-3 text-[25px] gap-[100px] pl-20 hover:bg-customWhite transition-all duration-300 cursor-pointer text-customWhite hover:text-customBlack">
               <h1 className="w-[160px] text-customGreen group-hover:text-customBlack">
                 11:00 - 14:30
               </h1>
-              <p>{t("SLUG_5")}</p>
+              <p>{/* {t("SLUG_5")} */}</p>
             </div>
             <div className="group flex items-center p-3 text-[25px] gap-[100px] pl-20 hover:bg-customWhite transition-all duration-300 cursor-pointer text-customWhite hover:text-customBlack">
               <h1 className="w-[160px] text-customGreen group-hover:text-customBlack">
                 15:30
               </h1>
-              <p>{t("SLUG_6")}</p>
+              <p>{/* {t("SLUG_6")} */}</p>
             </div>
           </div>
         </div>
@@ -79,12 +79,14 @@ export const Schedule = () => {
             <h1 className="text-customGreen">15:30</h1>
           </div>
           <div className="w-[60%] h-full flex flex-col justify-around text-[13px]">
-            <h1 className="text-customWhite">{t("SLUG_1")}</h1>
-            <h1 className="text-customWhite">{t("SLUG_2")}</h1>
-            <h1 className="text-customWhite text-[10px]">{t("SLUG_3")}</h1>
-            <h1 className="text-customWhite">{t("SLUG_4")}</h1>
-            <h1 className="text-customWhite">{t("SLUG_5")}</h1>
-            <h1 className="text-customWhite">{t("SLUG_6")}</h1>
+            <h1 className="text-customWhite">{/* {t("SLUG_1")} */}</h1>
+            <h1 className="text-customWhite">{/* {t("SLUG_2")} */}</h1>
+            <h1 className="text-customWhite text-[10px]">
+              {/* {t("SLUG_3")} */}
+            </h1>
+            <h1 className="text-customWhite">{/* {t("SLUG_4")} */}</h1>
+            <h1 className="text-customWhite">{/* {t("SLUG_5")} */}</h1>
+            <h1 className="text-customWhite">{/* {t("SLUG_6")} */}</h1>
           </div>
         </div>
       </section>

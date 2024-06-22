@@ -62,6 +62,10 @@ export const Intro = () => {
           onClick={() => {
             setActiveSection("LOCATION");
             setTimeOfLastClick(Date.now());
+            window.open(
+              "https://ticket.kg/event/biskek-marafon-2024",
+              "_blank"
+            );
           }}
           className="overflow-hidden relative w-[189px] flex items-center justify-center font-light text-lg h-10 border border-customGreen text-white rounded-md cursor-pointer z-10 group sm:hidden"
         >
@@ -73,7 +77,12 @@ export const Intro = () => {
             {t("BUTTON_TEXT")}
           </span>
         </Link>
-        <button className="hidden sm:block border-customGreen border px-4 py-1 text-customGreen font-extralight">
+        <button
+          onClick={() =>
+            window.open("https://ticket.kg/event/biskek-marafon-2024", "_blank")
+          }
+          className="hidden sm:block border-customGreen border px-4 py-1 text-customGreen font-extralight"
+        >
           {t("BUTTON_TEXT_MOBILE")}
         </button>
       </motion.article>

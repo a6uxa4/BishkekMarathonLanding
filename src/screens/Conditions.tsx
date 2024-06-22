@@ -44,7 +44,6 @@ export const Conditions = () => {
           <h1 className="absolute z-20 text-customWhite text-[46px] font-bold leading-5">
             {t("TITLE")}
           </h1>
-          <div className="w-full h-full bg-customGreen opacity-30"></div>
         </div>
       </section>
       <section className="w-screen h-[460px] hidden sm:block">

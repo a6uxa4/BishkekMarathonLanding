@@ -20,7 +20,7 @@ export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { scrollYProgress } = useScroll();
   const pathName = usePathname();
-  const { replace } = useRouter();
+  const { replace, push } = useRouter();
 
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -58,7 +58,15 @@ export const Header = () => {
                 </Link>
               ))}
             </div>
-            <button className="overflow-hidden relative w-[199px] font-light text-lg h-8 border border-customGreen bg-black text-white rounded-md cursor-pointer z-10 group">
+            <button
+              onClick={() =>
+                window.open(
+                  "https://ticket.kg/event/biskek-marafon-2024",
+                  "_blank"
+                )
+              }
+              className="overflow-hidden relative w-[199px] font-light text-lg h-8 border border-customGreen bg-black text-white rounded-md cursor-pointer z-10 group"
+            >
               {t("BUTTON_TEXT")}
               <span className="absolute w-[204px] h-32 -top-8 -left-2 bg-customWhite rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-300 duration-700 origin-right"></span>
               <span className="absolute w-[204px] h-32 -top-8 -left-2 bg-customGreen rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-500 origin-right"></span>

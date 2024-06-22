@@ -31,12 +31,15 @@
   },
   "SCHEDULE": {
     "TITLE": "Schedule for",
-    "SLUG_1": "Discovery",
-    "SLUG_2": "Warm up before the start",
-    "SLUG_3": "ANTHEM KR with participation of the Kyrgyz National Conservatory named after K. K. Kovalev. K. Moldobasanov.",
-    "SLUG_4": "Starting from different distances",
-    "SLUG_5": "Awarding",
-    "SLUG_6": "Closure"
+    "SLUG_1": "Gathering of participants at Ala-archa shopping center",
+    "SLUG_2": "Official opening of the event",
+    "SLUG_3": "Briefing and briefing for participants",
+    "SLUG_4": "Warm-up before the start",
+    "SLUG_5": "Start of the 12km race",
+    "SLUG_6": "Start of the 5km race",
+    "SLUG_7": "Finish/Medal Presentation",
+    "SLUG_8": "Entertainment program for participants and lottery drawing",
+    "SLUG_9": "Closing of the event"
   },
   "GOALS": {
     "TITLE": "MARATHON OBJECTIVES",

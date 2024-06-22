@@ -18,7 +18,6 @@ export const Finish = () => {
         </div>
       </div>
       <div className="w-[50%] h-full bg-finish bg-right object-cover bg-cover pt-3 sm:p-0 sm:w-full sm:relative">
-        <div className="w-full h-full bg-customRed/30 sm:bg-customRed/60"></div>
         <div className="absolute top-10 flex-col items-start justify-center gap-5 px-4 hidden sm:flex">
           <h1 className="text-customGreen text-[28px]">{t("TITLE")}</h1>
           <div className="flex flex-col gap-10 text-[16px]">

@@ -6,7 +6,7 @@ import ActiveSectionContextProvider from "@/providers/ActiveSection";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 
 export async function generateMetadata({ params }: any) {
-  const metadataBase = new URL("https://bishkekmarthon.run");
+  const metadataBase = new URL("https://bishkekmarathon.run");
 
   if (params.locale === "ru") {
     return {

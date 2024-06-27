@@ -69,7 +69,7 @@ export default function RootLayout({
     <html lang={locale}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href={`https://bishkekmarathon.kg/${locale}`} />
+        <link rel="canonical" href={`https://bishkekmarathon.run/${locale}`} />
       </head>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>

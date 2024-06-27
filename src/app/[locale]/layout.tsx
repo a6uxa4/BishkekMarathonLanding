@@ -55,7 +55,6 @@ export async function generateMetadata({ params }: any) {
       },
     };
   }
-
   return {
     metadataBase,
     title: "Бишкек Марафон",

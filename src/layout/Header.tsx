@@ -20,7 +20,7 @@ export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { scrollYProgress } = useScroll();
   const pathName = usePathname();
-  const { replace, push } = useRouter();
+  const { replace } = useRouter();
 
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
